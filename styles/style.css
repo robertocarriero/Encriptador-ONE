@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #222831;
+}
+main {
+    flex: 1;
+}
+.encriptador {
+    width: 100%;
+}
+.logo {
+    width: 7%;
+    height: 7%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.titulo {
+    position: relative;
+    margin-left: 24%;
+    margin-top: 1%;
+    font-size: 2rem;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+.parrafo {
+    margin-top: 4%;
+    margin-left: 6%;
+    font-size: 0.75rem;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+.textarea {
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 20px;
+    border-radius: 19px;
+    border: none;
+    background-color: #CAE6B2;
+    width: 60%;
+    height: 29%;
+}
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Fija el modal en la pantalla */
+    z-index: 1; /* Asegura que el modal esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite desplazamiento si el contenido es grande */
+    background-color: rgb(0,0,0); /* Fallback para colores antiguos */
+    background-color: rgba(0,0,0,0.4); /* Negro con opacidad */
+  }
+    .modal-content {
+    background-color: #BEC6A0;
+    margin: 15% auto; /* Centra el modal */
+    padding: 20px;
+    border: 2px solid #888;
+    width: 40%; /* Ancho del modal */
+    border-radius: 16px;
+  }
+  .close {
+    color: #ffffff;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    background: #776B5D;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .button1 {
+    width: 14%;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid #2e518b;
+    padding: 2px;
+    background-color: #399918;
+    color: #ffffff;
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 4.5%;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .7), inset -2px -2px 3px rgba(0, 0, 0, .1), 2px 2px 10px rgba(0, 0, 0, .1);
+}
+.button2 {
+    width: 14%;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid #2e518b;
+    padding: 2px;
+    background-color: #399918;
+    color: #ffffff;
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 2%;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .7), inset -2px -2px 3px rgba(0, 0, 0, .1), 2px 2px 10px rgba(0, 0, 0, .1);
+}
+.button3{
+    position: absolute;
+    width: 14%;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid #2e518b;
+    padding: 2px;
+    background-color: #399918;
+    color: #ffffff;
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .7), inset -2px -2px 3px rgba(0, 0, 0, .1), 2px 2px 10px rgba(0, 0, 0, .1);
+    margin-left: 2%;
+    margin-top: 4%;
+}
+.button4 {
+    width: 14%;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid #2e518b;
+    padding: 2px;
+    background-color: #399918;
+    color: #ffffff;
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .7), inset -2px -2px 3px rgba(0, 0, 0, .1), 2px 2px 10px rgba(0, 0, 0, .1);
+    margin-left: 18%;
+    margin-top: 4%;
+}
+.button1:hover, .button2:hover, .button3:hover, .button4:hover {
+    background-color: rgb(142, 142, 245);
+    color: black;
+}
+.result {
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    width: 25%;
+    height: 83%;
+    background-color: #CAE6B2;
+    border-radius: 19px;
+    box-sizing: border-box;
+    padding: 2% 2% 2% 2%;  
+    overflow: auto; 
+}
+.muñeco {
+    width: 65%;
+    height: 45%;
+    margin-top: 32%;
+    margin-left: 20%;
+}
+.hidden {
+    display: none;
+}
+.subTitMun {
+    margin-left: 1%;
+    font-family: 'Inter', sans-serif;
+    margin-top: 0.5%;
+    color: #000000;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.parrMun {
+    margin-left:  1%;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color: #000000;
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #CAE6B2;
+    justify-content: center;
+    padding-bottom: 8px;
+    padding-top: 2px; 
+    color: #000000;
+}
+
+/*Para tablet */
+@media only screen and (max-width: 768px) and (max-width: 1174px) {
+    .body {
+      
+        height: 100%;
+    }
+    .encriptador {
+        width: 100%;
+        height: 100%;
+    }
+    .logo {
+        width: 13%;
+        height: 13%;
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+    .titulo {
+        position: relative;
+        margin-top: 3%;
+        margin-left: 28.5%;
+        padding: 0;
+    }
+    .parrafo {
+        margin-left: 21%;
+        margin-top: 5%;
+        margin-right: 2%;
+       
+    }
+    .textarea {
+        width: 64%;
+        height: 56%;
+        display: flex;
+        margin-top: 5%;
+        margin-left: 15vw;
+    }
+    .button1, .button2, .button3{
+        margin-top: 6%;
+        margin-left: 7%;
+        width: 16%;
+        font-size: 1.5vw;
+        margin-bottom: 4%;
+    }
+    .button4{
+        margin-top: 6%;
+        margin-left: 28%;
+        width: 16%;
+        font-size: 1.5vw;
+        margin-bottom: 4%;
+    }
+    .result {
+        position: relative; 
+        left: 18%; 
+        width: 65%;
+        height: 50vh;
+        margin: 0;
+        padding: 30px 30px 30px 30px;
+    }
+    .subTitMun {
+       display: none;
+    }
+    .parrMun {
+        margin-right: 12%;
+    }
+    .muñeco {
+        display: none;
+    }
+    .footer {
+        width: 100vw;
+        height: 55px;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 2vw;
+        background-color: #CAE6B2;
+        justify-content: center;
+        padding-bottom: 8px;
+        padding-top: 2px; 
+        color: #000000;
+        margin-top: 100%;
+    }
+}
+/*Para celular */
+@media only screen and (max-width: 375px) and (max-width: 933px) {
+    .body {
+        height: 100%;
+    }
+    .encriptador {
+        width: 100%;
+        height: 100%;
+    }
+    .logo {
+        width: 16%;
+        height: 16%;
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+    .titulo {
+        position: relative;
+        margin-top: 16%;
+        margin-left: 19%;
+        font-size: 7vw;
+    }
+    .parrafo {
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .textarea {
+        width: 59%;
+        height: 40%;
+        display: flex;
+        margin-top: 5%;
+        margin-left: 13.5%;
+    }
+    .button1, .button2, .button3 {
+        margin-top: 5%;
+        margin-left:6%;
+        width: 16%;
+        font-size: 2vw;
+    }
+    .button4{
+        margin-top: 5%;
+        margin-left:28%;
+        width: 16%;
+        font-size: 2vw;
+    }
+    .result {
+        position: relative; 
+        margin-top: 59.5%;
+        left: 18%; 
+        width: 65%;
+        height: 40%;
+        margin: 0;
+        padding: 30px 30px 30px 30px;
+    }
+    .subTitMun {
+       display: none;
+    }
+    .parrMun {
+        margin-right: 12%;
+    }
+    .muñeco {
+        display: none;
+    }
+    .footer {
+        width: 100vw;
+        height: 55px;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 4vw;
+        background-color: #CAE6B2;
+        justify-content: center;
+        padding-bottom: 8px;
+        padding-top: 2px; 
+        color: #000000;
+        margin-top: 100%;
+        
+    }
+}
+
+

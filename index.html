@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body class="body">
+
+    <main>
+        <section class="encriptador">
+            <div class="logos">
+                <img  class="logo" src="./assets/img/logos5.png" alt="logo">
+            </div>
+            <div class="title">
+                <h1 class="titulo"></h1>
+            </div>
+            <div class="parrafo">
+                <p ></p>
+            </div>
+                <textarea name="" id="" class="textarea"  rows="4" column="55" placeholder="Ingrese el texto a encriptar"></textarea>
+            <div class="buttons">
+                <button class="button1">Encriptar</button>
+                <button class="button2">Desencriptar</button>
+                <button class="button3">Copiar</button>
+                <button class="button4">Limpiar</button>
+            </div>
+            <div class="result" id="resultado">
+                <img class="muñeco" id="muñeco" src="./assets/img/Muñeco.png" alt="Muñeco">
+                <h3 class="subTitMun"></h3>
+                <p class="parrMun" id="parrafo"></p>
+                <div class="encriptado"></div> <!-- Contenedor específico para el texto encriptado/desencriptado -->
+            </div>
+            <!-- Modal -->
+            <div id="errorModal" class="modal">
+                <div class="modal-content">
+                  <button class="close">Cerrar</button>
+                  <p id="modalMessage"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3>Desarrollado por Roberto Carriero</h3>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
