@@ -26,7 +26,7 @@
 >>>>**Clonar el repositorio:**
 >>>>>
 >>>>>Copiar código
->>>>>### git clone https://github.com/robertocarriero/Encriptador
+>>>>>### git clone https://github.com/robertocarriero/Encriptador-ONE
 >>>>>Abrir el archivo index.html en tu navegador web para utilizar la aplicación.
 
 >>## Tecnólogias utilizadas
