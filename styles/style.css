@@ -48,7 +48,7 @@ main {
     padding: 20px;
     border-radius: 19px;
     border: none;
-    background-color: #CAE6B2;
+    background-color: #f6f6e2;
     width: 60%;
     height: 29%;
 }
@@ -82,7 +82,6 @@ main {
     cursor: pointer;
     border-radius: 5px;
   }
-  
   .close:hover,
   .close:focus {
     color: black;
@@ -96,7 +95,7 @@ main {
     transition: background-color 0.3s ease;
     border: 1px solid #2e518b;
     padding: 2px;
-    background-color: #399918;
+    background-color: #706f6b;
     color: #ffffff;
     font-size: 1.2vw;
     font-weight: bold;
@@ -113,7 +112,7 @@ main {
     transition: background-color 0.3s ease;
     border: 1px solid #2e518b;
     padding: 2px;
-    background-color: #399918;
+    background-color: #706f6b;
     color: #ffffff;
     font-size: 1.2vw;
     font-weight: bold;
@@ -131,7 +130,7 @@ main {
     transition: background-color 0.3s ease;
     border: 1px solid #2e518b;
     padding: 2px;
-    background-color: #399918;
+    background-color: #706f6b;
     color: #ffffff;
     font-size: 1.2vw;
     font-weight: bold;
@@ -148,7 +147,7 @@ main {
     transition: background-color 0.3s ease;
     border: 1px solid #2e518b;
     padding: 2px;
-    background-color: #399918;
+    background-color: #706f6b;
     color: #ffffff;
     font-size: 1.2vw;
     font-weight: bold;
@@ -168,11 +167,10 @@ main {
     right: 2%;
     width: 25%;
     height: 83%;
-    background-color: #CAE6B2;
+    background-color: #f6f6e2;
     border-radius: 19px;
     box-sizing: border-box;
     padding: 2% 2% 2% 2%;  
-    overflow: auto; 
 }
 .muñeco {
     width: 65%;
@@ -205,7 +203,7 @@ main {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
-    background-color: #CAE6B2;
+    background-color: #e0d3b8;
     justify-content: center;
     padding-bottom: 8px;
     padding-top: 2px; 
@@ -222,14 +220,12 @@ main {
         margin-left: 5%;
         font-size: 0.85rem;
     }
-    
     .textarea {
         margin-left: 5%;
         width: 80%;
         height: 25%;
         font-size: 1rem;
     }
-    
     .button1, .button2, .button3 {
         width: 18%;
         font-size: 0.8rem;
@@ -241,7 +237,6 @@ main {
         margin-top: 10px;
         margin-left: 24%;
     }
-
     .result {
         position: static;
         width: 80%;
@@ -249,7 +244,6 @@ main {
         margin: 20px auto;
         margin-left: 7%;
     }
-
     .muñeco {
         display: none;
     }
@@ -289,22 +283,18 @@ main {
         margin-left: 40%;
         margin-top: 10px; 
     }
-
     .result {
         position: static;
         width: 80%;
         height: 20%;
         margin: 20px auto;
     }
-
     .muñeco {
         display: none;
     }
-
     .subTitMun, .parrMun {
         font-size: 1rem;
     }
-
     .footer {
         font-size: 1rem;
     }

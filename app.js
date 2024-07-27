@@ -47,7 +47,7 @@ function encriptar() {
   const texto = document.querySelector('.textarea').value;
 
   if (!validarTexto(texto)) {
-    mostrarModal('El texto contiene caracteres no permitidos. El texo debe estar en minúsculas y sin acentos.');
+    mostrarModal('El texto contiene caracteres no permitidos. El texto debe estar en minúsculas y sin acentos.');
     return;
   }
 
@@ -59,10 +59,10 @@ function encriptar() {
   
   const munecoElement = document.querySelector('.muñeco');
   if (munecoElement) munecoElement.classList.add('hidden');
-  const resultElement = document.querySelector('.subTitMun');
-  if (resultElement) resultElement.classList.add('hidden');
-  const resultElemento = document.querySelector('.parrMun');
-  if (resultElemento) resultElemento.classList.add('hidden');
+  const subTitMunElement = document.querySelector('.subTitMun');
+  if (subTitMunElement) subTitMunElement.classList.add('hidden');
+  const parrMunElement = document.querySelector('.parrMun');
+  if (parrMunElement) parrMunElement.classList.add('hidden');
   console.log("Texto encriptado.");
 }
 
@@ -79,10 +79,13 @@ function desencriptar() {
   if (encriptadoElement) {
     encriptadoElement.innerHTML = desencriptado;
   }
+  
   const munecoElement = document.querySelector('.muñeco');
   if (munecoElement) munecoElement.classList.add('hidden');
-  const resultElement = document.querySelector('.result');
-  if (resultElement) resultElement.classList.remove('hidden');
+  const subTitMunElement = document.querySelector('.subTitMun');
+  if (subTitMunElement) subTitMunElement.classList.add('hidden');
+  const parrMunElement = document.querySelector('.parrMun');
+  if (parrMunElement) parrMunElement.classList.add('hidden');
   console.log("Texto desencriptado.");
 }
 
@@ -90,9 +93,9 @@ function copiarTexto() {
   const encriptadoElement = document.querySelector('.encriptado');
   const texto = encriptadoElement.innerHTML;
   navigator.clipboard.writeText(texto).then(function() {
-      alert('Texto copiado al portapapeles');
+    alert('Texto copiado al portapapeles');
   }).catch(function(err) {
-      alert('Error al copiar el texto: ', err);
+    alert('Error al copiar el texto: ', err);
   });
 }
 
@@ -105,10 +108,10 @@ function limpiarTextos() {
   }
   const munecoElement = document.querySelector('.muñeco');
   if (munecoElement) munecoElement.classList.remove('hidden');
-  const resultElement = document.querySelector('.subTitMun');
-  if (resultElement) resultElement.classList.remove('hidden');
-  const resultElemento = document.querySelector('.parrMun');
-  if (resultElemento) resultElemento.classList.remove('hidden');
+  const subTitMunElement = document.querySelector('.subTitMun');
+  if (subTitMunElement) subTitMunElement.classList.remove('hidden');
+  const parrMunElement = document.querySelector('.parrMun');
+  if (parrMunElement) parrMunElement.classList.remove('hidden');
   console.log("Limpieza completada, figura visible.");
   condicionInicial();
 }
